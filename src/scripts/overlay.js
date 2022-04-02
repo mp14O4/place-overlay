@@ -6,7 +6,6 @@
 // @author       mp1404
 // @match        https://hot-potato.reddit.com/embed*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=reddit.com
-// @grant        oralekin, LittleEndu
 // ==/UserScript==
 const url = "https://raw.githubusercontent.com/mp14O4/place-overlay/main/src/resources/overlay.png"
 if (window.top !== window.self) {
