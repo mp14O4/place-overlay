@@ -9,7 +9,7 @@
 // @updateURL    https://github.com/mp14O4/place-overlay/raw/main/src/scripts/overlay.js
 // @downloadURL  https://github.com/mp14O4/place-overlay/raw/main/src/scripts/overlay.js
 // ==/UserScript==
-const url = "https://raw.githubusercontent.com/mp14O4/place-overlay/main/src/resources/overlay.png"
+const url = "https://raw.githubusercontent.com/placeDE/pixel/main/overlay.png"
 if (window.top !== window.self) {
     window.addEventListener('load', () => {
         document.getElementsByTagName("mona-lisa-embed")[0].shadowRoot.children[0].getElementsByTagName("mona-lisa-canvas")[0].shadowRoot.children[0].appendChild(
