@@ -1,0 +1,1 @@
+Hierbei handelt es sich um eine angepasste Version des Skripts aus dem pixel-Repo. Es erzeugt aus der JSON ein png, die für jeden gesetzten Punkt einen Pixel in der Mitte des 3x3 Feldes hat. Dieses png kann dann mit dem Overlay angezeigt werden.
