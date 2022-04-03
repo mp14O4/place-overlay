@@ -1,13 +1,13 @@
 // ==UserScript==
 // @name         r/placeDE Template
 // @namespace    http://tampermonkey.net/
-// @version      1
+// @version      2
 // @description  try to take over the canvas!
 // @author       mp1404
 // @match        https://hot-potato.reddit.com/embed*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=reddit.com
-// @updateURL    https://github.com/mp14O4/place-overlay/raw/main/src/scripts/overlay.js
-// @downloadURL  https://github.com/mp14O4/place-overlay/raw/main/src/scripts/overlay.js
+// @updateURL    https://github.com/placeDE/place-overlay/raw/main/src/scripts/placeDE-overlay.user.js
+// @downloadURL  https://github.com/placeDE/place-overlay/raw/main/src/scripts/placeDE-overlay.user.js
 // ==/UserScript==
 const url = "https://raw.githubusercontent.com/placeDE/pixel/main/overlay.png"
 if (window.top !== window.self) {
