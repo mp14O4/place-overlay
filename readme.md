@@ -22,8 +22,7 @@ Nach dem Installieren siehst du auf der r/place Leinwand kleinere "Pixel" innerh
 ![image](https://github.com/PlaceDE-Official/place-overlay/assets/28481491/50247ae0-b082-45f2-8769-0e017c23056f)
 
 
-#FAQ:
-
+# FAQ
 
 ## Wo kann ich das Overlay installieren?
 Bitte befolge einfach diese Anleitung https://discord.com/channels/297765871122907136/298082046998478848/1131675125301911593 in #announcements.
