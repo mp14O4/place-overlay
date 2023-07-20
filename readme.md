@@ -15,5 +15,3 @@
 4. Script in Tampermonkey installieren oder updaten/neu installieren 
    
    ![installieren button](img/install.png)
-
-5. F5 drücken, wann immer aktualisiert wird.
