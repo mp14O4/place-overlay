@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         r/placeDE Template
 // @namespace    http://tampermonkey.net/
-// @version      2
+// @version      3
 // @description  try to take over the canvas!
 // @author       mp1404
 // @match        https://garlic-bread.reddit.com/embed*
@@ -10,15 +10,13 @@
 // @downloadURL  https://github.com/PlaceDE-Official/place-overlay/raw/main/src/scripts/placeDE-overlay.user.js
 // ==/UserScript==
 
-let url = "https://www.nme.com/wp-content/uploads/2021/07/RickAstley2021.jpg"
+let url = "https://raw.githubusercontent.com/PlaceDE-Official/pixel/main/outputs/overlay_target.png"
 if (window.top !== window.self) {
     window.addEventListener('load', () => {
-        document.getElementsByTagName("garlic-bread-embed")[0].shadowRoot.children[0].getElementsByTagName("garlic-bread-canvas")[0].shadowRoot.children[0].appendChild(
-            (function () {
-                const i = document.createElement("img");
-                i.src = url;
-                i.style = "position: absolute;left: 0;top: 0;image-rendering: pixelated;width: 1000px;height: 1000px;";
-                return i;
-            })())
+        const canvasContainer = document.getElementsByTagName("garlic-bread-embed")[0].shadowRoot.children[0].getElementsByTagName("garlic-bread-canvas")[0].shadowRoot.children[0];
+        const overlayImage = document.createElement("img");
+        overlayImage.src = url;
+        overlayImage.style = `position: absolute;left: 0;top: 0;image-rendering: pixelated;width: 100opx;height: 1000px;`;
+        canvasContainer.appendChild(overlayImage);
     }, false);
 }
