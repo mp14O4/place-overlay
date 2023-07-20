@@ -29,6 +29,7 @@ Die Flagge ist relativ simpel und klar abgegrenzt. Somit kann jeder - auch Leute
 
 ## Wieso funktioniert das Overlay nicht?
 Falls das Overlay nicht funktioniert stelle bitte folgende Sachen sicher:
+- Lade die Seite einmal neu, eventuell wurde das Skript einfach nur nicht geladen.
 - Zoom einmal in das Canvas auf Höhe des r/placeDE-Bereichs herein, da es sein kann, dass das Overlay erst bei etwas Zoom deutlich sichtbar wird.
 - In den ersten Versionen kam es bei manchen Browsern in Kombination mit einem eingeschalteten Darkmode zu komplikationen. Bitte update das Skrip für das Overlay oder deaktiviere den Darkmode.
 - Falls du noch einen anderen Browser hast, probiere bitte einmal diesen Browser.
