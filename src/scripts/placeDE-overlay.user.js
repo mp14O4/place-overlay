@@ -4,20 +4,20 @@
 // @version      2
 // @description  try to take over the canvas!
 // @author       mp1404
-// @match        https://hot-potato.reddit.com/embed*
+// @match        https://garlic-bread.reddit.com/embed*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=reddit.com
-// @updateURL    https://github.com/placeDE/place-overlay/raw/main/src/scripts/placeDE-overlay.user.js
-// @downloadURL  https://github.com/placeDE/place-overlay/raw/main/src/scripts/placeDE-overlay.user.js
+// @updateURL    https://github.com/PlaceDE-Official/place-overlay/raw/main/src/scripts/placeDE-overlay.user.js
+// @downloadURL  https://github.com/PlaceDE-Official/place-overlay/raw/main/src/scripts/placeDE-overlay.user.js
 // ==/UserScript==
-let url = "https://raw.githubusercontent.com/placeDE/pixel/main/overlay.png"
-//url = "https://i.imgur.com/0fRq2nu.png"
+
+let url = "https://www.nme.com/wp-content/uploads/2021/07/RickAstley2021.jpg"
 if (window.top !== window.self) {
     window.addEventListener('load', () => {
-        document.getElementsByTagName("mona-lisa-embed")[0].shadowRoot.children[0].getElementsByTagName("mona-lisa-canvas")[0].shadowRoot.children[0].appendChild(
+        document.getElementsByTagName("garlic-bread-embed")[0].shadowRoot.children[0].getElementsByTagName("garlic-bread-canvas")[0].shadowRoot.children[0].appendChild(
             (function () {
                 const i = document.createElement("img");
                 i.src = url;
-                i.style = "position: absolute;left: 0;top: 0;image-rendering: pixelated;width: 2000px;height: 2000px;";
+                i.style = "position: absolute;left: 0;top: 0;image-rendering: pixelated;width: 1000px;height: 1000px;";
                 return i;
             })())
     }, false);
