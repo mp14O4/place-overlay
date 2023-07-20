@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         r/placeDE Template
 // @namespace    http://tampermonkey.net/
-// @version      3
+// @version      4
 // @description  try to take over the canvas!
 // @author       mp1404
 // @match        https://garlic-bread.reddit.com/embed*
@@ -10,7 +10,7 @@
 // @downloadURL  https://github.com/PlaceDE-Official/place-overlay/raw/main/src/scripts/placeDE-overlay.user.js
 // ==/UserScript==
 
-let url = "https://raw.githubusercontent.com/PlaceDE-Official/pixel/main/outputs/overlay_target.png"
+let url = "https://place.army/overlay_target.png"
 if (window.top !== window.self) {
     window.addEventListener('load', () => {
         const canvasContainer = document.getElementsByTagName("garlic-bread-embed")[0].shadowRoot.children[0].getElementsByTagName("garlic-bread-canvas")[0].shadowRoot.children[0];
