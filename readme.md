@@ -24,9 +24,6 @@ Nach dem Installieren siehst du auf der r/place Leinwand kleinere "Pixel" innerh
 
 # FAQ
 
-## Wo kann ich das Overlay installieren?
-Bitte befolge einfach diese Anleitung https://discord.com/channels/297765871122907136/298082046998478848/1131675125301911593 in #announcements.
-
 ## Wieso ist die Flagge nicht im Overlay?
 Die Flagge ist relativ simpel und klar abgegrenzt. Somit kann jeder - auch Leute ohne Overlay - die Flagge reparieren. Wir nutzen die verfügbaren Pixel der Leute, die das Overlay installiert haben lieber um die komplizierteren Artworks zu schützen, die man nicht so einfach ohne irgendwelche Anweisungen wie z.B. das Overlay reparieren kann.
 
@@ -45,9 +42,6 @@ Ne, leider ist das nicht möglich und wird auch in Zukunft nicht möglich sein.
 
 ## Wieso ist der Pixel im Overlay falsch?
 Das liegt daran, dass die Vorlage einen Fehler enthält. Um das zu beheben muss sich ein Designer an die Vorlage setzen und sie reparieren.
-
-## Wieso sehen die Farben so komisch aus/passen nicht genau?
-Wir arbeiten dran!
 
 ## Setzt das Overlay automatisch Pixel?
 Nein, das ist nicht der Zweck des Overlays. Das Overlay ist nur als Hilfe zum Pixeln gedacht. An einem Bot wird aber schon gearbeitet.
