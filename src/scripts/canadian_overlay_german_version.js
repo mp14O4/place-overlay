@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         r/place 2023 Canada Overlay with German tiles
 // @namespace    http://tampermonkey.net/
-// @version      0.8.3
+// @version      0.8.4
 // @description  Script that adds a button to toggle an hardcoded image shown in the 2023's r/place canvas
 // @author       max-was-here
 // @match        https://garlic-bread.reddit.com/embed*
@@ -9,20 +9,24 @@
 // @grant        none
 // ==/UserScript==
 
+let width = "1500px";
+let height = "1000px";
+var button = null;
+
 if (window.top !== window.self) {
   addEventListener('load', () => {
     // ==============================================
     const STORAGE_KEY = 'place-germany-2023-ostate';
     const OVERLAYS = [
-      "https://place.army/overlay_target.png",
-      "https://place.army/default_target.png"
+      ["https://place.army/overlay_target.png", "Pixel"],
+      ["https://place.army/default_target.png", "Vollbild"]
     ];
     const getConfig = (text) => {
-        return text + Date.now()
+        return text + "?" + Date.now()
     }
 
     let oState = {
-      opacity: 90,
+      opacity: 100,
       overlayIdx: 0
     };
 
@@ -37,12 +41,12 @@ if (window.top !== window.self) {
     img.style.pointerEvents = 'none';
     img.style.position = 'absolute';
     img.style.imageRendering = 'pixelated';
-    img.src = OVERLAYS[oState.overlayIdx];
+    img.src = OVERLAYS[oState.overlayIdx][0];
     img.style.opacity = oState.opacity;
     img.style.top = '0px';
     img.style.left = '0px';
-    img.style.width = '1500px';
-    img.style.height = '1000px';
+    img.style.width = width;
+    img.style.height = height;
     img.style.zIndex = '100';
     img.onload = () => {
       console.log('loaded');
@@ -81,16 +85,17 @@ if (window.top !== window.self) {
       if(oState.overlayIdx >= OVERLAYS.length){
         oState.overlayIdx = 0;
       }
-      img.src = getConfig(OVERLAYS[oState.overlayIdx]);
+      img.src = getConfig(OVERLAYS[oState.overlayIdx][0]);
+      button.innerText = 'Switch Overlay\n(' + OVERLAYS[oState.overlayIdx][1] + ')';
       img.style.opacity = oState.opacity / 100;
       saveState();
     };
 
     const addButton = (text, onClick) => {
-      const button = document.createElement('button');
+      button = document.createElement('button');
       button.onclick = onClick;
       button.style.width = "100px";
-      button.style.height = "45px";
+      button.style.height = "65px";
       button.style.backgroundColor = "#555";
       button.style.color = "white";
       button.style.border = "var(--pixel-border)";
@@ -134,7 +139,7 @@ if (window.top !== window.self) {
     };
 
     addButton(
-      'Switch Overlay',
+      'Switch Overlay\n(Pixel)',
       switchOverlay
     );
     addSlider(
