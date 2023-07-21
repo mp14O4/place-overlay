@@ -45,4 +45,4 @@ Ne, leider ist das nicht möglich und wird auch in Zukunft nicht möglich sein.
 Das liegt daran, dass die Vorlage einen Fehler enthält. Um das zu beheben muss sich ein Designer an die Vorlage setzen und sie reparieren.
 
 ## Setzt das Overlay automatisch Pixel?
-Nein, das ist nicht der Zweck des Overlays. Das Overlay ist nur als Hilfe zum Pixeln gedacht. An einem Bot wird aber schon gearbeitet.
+Nein, das ist nicht der Zweck des Overlays. Das Overlay ist nur als Hilfe zum Pixeln gedacht. Es gibt aber schon einen Bot, wessen Anleitung [hier](https://place.army/) einsehbar ist.
