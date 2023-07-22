@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         r/placeDE Template
 // @namespace    http://tampermonkey.net/
-// @version      8.1
+// @version      8.2
 // @description  try to take over the canvas!
 // @author       placeDE Devs
 // @match        https://garlic-bread.reddit.com/embed*
@@ -16,7 +16,7 @@ if (window.top !== window.self) {
         const canvasContainer = document.querySelector("garlic-bread-embed").shadowRoot.querySelector("div.layout").querySelector("garlic-bread-canvas").shadowRoot.querySelector("div.container");
         overlayImage = document.createElement("img");
         updateImage();
-        overlayImage.style = `position: absolute;left: 0;top: 0;image-rendering: pixelated;width: 1500px;height: 1000px;pointerEvents: 'none';`;
+        overlayImage.style = `position: absolute;left: 0;top: 0;image-rendering: pixelated;width: 2000px;height: 1000px;pointerEvents: 'none';`;
         canvasContainer.appendChild(overlayImage);
     }, false);
 }
