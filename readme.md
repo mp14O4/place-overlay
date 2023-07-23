@@ -20,7 +20,7 @@ Direktlinks:
 
 3. Anschließend auf einen der folgenden Links klicken, um das jeweilige Overlay zu installieren, Tampermonkey sollte sich automatisch öffnen (wenn du dich nicht entscheiden kannst, findest du die Unterschiede [hier](#wie-funktioniert-das-overlay)):
    - [Normales Overlay](https://github.com/PlaceDE-Official/place-overlay/raw/main/src/scripts/placeDE-overlay.user.js)  
-   - [Erweitertes Overlay](https://github.com/PlaceDE-Official/place-overlay/raw/main/src/scripts/advanced_overlay.js)
+   - [Erweitertes Overlay](https://github.com/PlaceDE-Official/place-overlay/raw/main/src/scripts/advanced_overlay.user.js)
 
 4. Nun drückt ihr in Tampermonkey nur noch auf "Updaten" oder "Neu installieren".  
 Das Ganze sieht dann in Tampermonkey (abhängig von der gewählten Variante) ungefähr so aus:
