@@ -3,6 +3,7 @@
 Das Overlay zeigt dir an, wo falsche Pixel sind, damit du richtige setzen kannst. Es setzt keine Pixel für dich.
 
 Direktlinks:  
+
 [Installation](#overlay-installieren)  
 [Updates](#overlay-updaten)  
 [Wie funktioniert das Overlay?](#wie-funktioniert-das-overlay)  
