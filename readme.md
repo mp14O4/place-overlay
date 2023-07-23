@@ -12,7 +12,7 @@ Direktlinks:
 
 1. https://www.tampermonkey.net/ öffnen
    
-   ![Website Tampermonkey](imt/../img/tampermonkey.png)
+   ![Website von Tampermonkey](imt/../img/tampermonkey.png)
 
 2. Unter "Download" mit "Gehe zum Store" das Plugin installieren -> Weiterleitung zu den App-Stores dort installieren
    
@@ -25,7 +25,7 @@ Direktlinks:
 4. Nun drückt ihr in Tampermonkey nur noch auf "Updaten" oder "Neu installieren".  
 Das Ganze sieht dann in Tampermonkey (abhängig von der gewählten Variante) ungefähr so aus:
    
-   ![Addon Tampermonkey](img/script-uebersicht.png)
+   ![Addonseite von Tampermonkey](img/script-uebersicht.png)
 
 ------
 
@@ -38,7 +38,7 @@ Um das Overlay auf eine neue Version zu aktualisieren (nicht die Daten, sondern 
 ### Normale Variante:
 Nach dem Installieren siehst du auf der r/place Leinwand kleinere "Pixel" innerhalb der tatsächlichen Pixel. Diese kleineren Pixel geben dir an, welche Farbe der Pixel haben sollte:
 
-![image](img/normal_overlay.png)
+![Vorschau des normalen Overlays](img/normal_overlay.png)
 
 ### Erweiterte Variante:
 
@@ -57,7 +57,7 @@ Außerdem gibt es unter dem Button einen Schieberegler (2).
 Dieser regelt, wie "durchscheinend" das Overlay sein soll.  
 Auf der ganz linken Position ist das Overlay komplett durchsichtig.
 
-![Erweitertes Overlay](img/advanced_overlay.png)
+![Vorschau des erweiterten Overlays](img/advanced_overlay.png)
 
 ------------
 
