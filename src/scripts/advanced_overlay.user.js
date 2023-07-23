@@ -6,8 +6,8 @@
 // @author       max-was-here and placeDE Devs
 // @match        https://garlic-bread.reddit.com/embed*
 // @icon         https://www.redditstatic.com/desktop2x/img/favicon/favicon-32x32.png
-// @updateURL    https://github.com/PlaceDE-Official/place-overlay/raw/main/src/scripts/advanced-overlay.user.js
-// @downloadURL  https://github.com/PlaceDE-Official/place-overlay/raw/main/src/scripts/advanced-overlay.user.js
+// @updateURL    https://github.com/PlaceDE-Official/place-overlay/raw/main/src/scripts/advanced_overlay.user.js
+// @downloadURL  https://github.com/PlaceDE-Official/place-overlay/raw/main/src/scripts/advanced_overlay.user.js
 // @grant        none
 // ==/UserScript==
 
