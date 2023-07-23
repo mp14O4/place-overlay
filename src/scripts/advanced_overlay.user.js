@@ -9,6 +9,7 @@
 // @updateURL    https://github.com/PlaceDE-Official/place-overlay/raw/main/src/scripts/advanced-overlay.user.js
 // @downloadURL  https://github.com/PlaceDE-Official/place-overlay/raw/main/src/scripts/advanced-overlay.user.js
 // @grant        none
+// @run-at   document-start
 // ==/UserScript==
 
 let width = "2000px";
