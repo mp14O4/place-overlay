@@ -70,6 +70,10 @@ if (window.top !== window.self) {
     buttonsWrapper.style.position = "absolute";
     buttonsWrapper.style.bottom = "25px";
     buttonsWrapper.style.right = "25px";
+    buttonsWrapper.style.display = "flex";
+    buttonsWrapper.style.flexDirection = "column";
+    buttonsWrapper.style.gap = "12px";
+
     mainContainer.appendChild(buttonsWrapper);
 
     const saveState = () => {
@@ -93,11 +97,26 @@ if (window.top !== window.self) {
       saveState();
     };
 
+    const exportScreenshot = () => {
+      const canvas = mainContainer
+        .querySelector('garlic-bread-canvas')
+        .shadowRoot.querySelector('canvas');
+      const imgUrl = canvas
+        .toDataURL('image/png');
+
+      const downloadEl = document
+        .createElement('a');
+      downloadEl.href = imgUrl;
+      downloadEl.download = 'place.png';
+      downloadEl.click();
+      downloadEl.remove();
+    }
+
     const addButton = (text, onClick) => {
       button = document.createElement('button');
       button.onclick = onClick;
       button.style.width = "100px";
-      button.style.height = "65px";
+      button.style.padding = "8px";
       button.style.backgroundColor = "#555";
       button.style.color = "white";
       button.style.border = "var(--pixel-border)";
@@ -118,7 +137,6 @@ if (window.top !== window.self) {
       opacityWrapper.style.border = "var(--pixel-border)";
       opacityWrapper.style.boxShadow = "var(--pixel-box-shadow)";
       opacityWrapper.style.fontFamily = "var(--garlic-bread-font-pixel)";
-      opacityWrapper.style.marginTop = "15px";
       opacityWrapper.style.textAlign = "center";
       opacityWrapper.innerText = text;
 
@@ -141,6 +159,10 @@ if (window.top !== window.self) {
     };
 
     addButton(
+      'Screenshot',
+      exportScreenshot
+    )
+    addButton(
       'Switch Overlay\n(kleine Pixel)',
       switchOverlay
     );
@@ -151,3 +173,4 @@ if (window.top !== window.self) {
     );
   });
 }
+
