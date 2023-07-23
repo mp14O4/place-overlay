@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         r/place 2023 Canada Overlay with German tiles
 // @namespace    http://tampermonkey.net/
-// @version      0.9
+// @version      0.10
 // @description  Script that adds a button to toggle an hardcoded image shown in the 2023's r/place canvas
 // @author       max-was-here and placeDE Devs
 // @match        https://garlic-bread.reddit.com/embed*
@@ -12,7 +12,7 @@
 // ==/UserScript==
 
 let width = "2000px";
-let height = "1500px";
+let height = "2000px";
 var button = null;
 
 if (window.top !== window.self) {
