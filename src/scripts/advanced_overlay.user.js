@@ -108,7 +108,7 @@ if (window.top !== window.self) {
       const downloadEl = document
         .createElement('a');
       downloadEl.href = imgUrl;
-      downloadEl.download = 'place.png';
+      downloadEl.download = `place-${Date.now()}.png`;
       downloadEl.click();
       downloadEl.remove();
     }
@@ -123,6 +123,7 @@ if (window.top !== window.self) {
       button.style.border = "var(--pixel-border)";
       button.style.boxShadow = "var(--pixel-box-shadow)";
       button.style.fontFamily = "var(--garlic-bread-font-pixel)";
+      button.style.cursor = "pointer";
 
       button.innerText = text;
 
