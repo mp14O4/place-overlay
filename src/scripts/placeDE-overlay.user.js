@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         r/placeDE Template
 // @namespace    http://tampermonkey.net/
-// @version      8.5
+// @version      8.6
 // @description  try to take over the canvas!
 // @author       placeDE Devs
 // @match        https://garlic-bread.reddit.com/embed*
