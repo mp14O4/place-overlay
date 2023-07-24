@@ -25,7 +25,7 @@ if (window.top !== window.self) {
       ["https://place.army/default_target.png", "große Pixel"]
     ];
     const getConfig = (text) => {
-        return text + "?" + Date.now()
+      return text + "?" + Date.now()
     }
 
     let oState = {
@@ -34,17 +34,18 @@ if (window.top !== window.self) {
     };
 
     const oStateStorage = localStorage.getItem(STORAGE_KEY);
-    if(oStateStorage !== null) {
+    if (oStateStorage !== null) {
       try {
         oState = Object.assign({}, oState, JSON.parse(oStateStorage));
-      } catch(e){}
+      } catch (e) { }
     }
+
+
 
     const img = document.createElement('img');
     img.style.pointerEvents = 'none';
     img.style.position = 'absolute';
     img.style.imageRendering = 'pixelated';
-    img.src = OVERLAYS[oState.overlayIdx][0];
     img.style.opacity = oState.opacity;
     img.style.top = '0px';
     img.style.left = '0px';
@@ -52,9 +53,18 @@ if (window.top !== window.self) {
     img.style.height = height;
     img.style.zIndex = '100';
     img.onload = () => {
-      console.log('loaded');
+      console.log('[PLACEDE] img loaded');
       img.style.opacity = oState.opacity / 100;
     };
+
+    const updateImage = () => {
+      img.src = getConfig(OVERLAYS[oState.overlayIdx][0])
+      console.log("[PLACEDE] updated overlay image")
+    };
+
+    updateImage();
+
+    setInterval(updateImage, 30000);
 
     const mainContainer = document
       .querySelector('garlic-bread-embed')
@@ -88,11 +98,8 @@ if (window.top !== window.self) {
     };
 
     const switchOverlay = () => {
-      oState.overlayIdx++;
-      if(oState.overlayIdx >= OVERLAYS.length){
-        oState.overlayIdx = 0;
-      }
-      img.src = getConfig(OVERLAYS[oState.overlayIdx][0]);
+      oState.overlayIdx = oState.overlayIdx + 1 % OVERLAYS.length
+      updateImage();
       button.innerText = 'Switch Overlay\n(' + OVERLAYS[oState.overlayIdx][1] + ')';
       img.style.opacity = oState.opacity / 100;
       saveState();
@@ -175,4 +182,3 @@ if (window.top !== window.self) {
     );
   });
 }
-
